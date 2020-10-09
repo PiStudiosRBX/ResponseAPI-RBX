@@ -6,7 +6,7 @@ local ResponseEnvironment = script.Parent
 local PREFIX = "$"
 local ChatService = require(game:GetService("ServerScriptService"):WaitForChild("ChatServiceRunner").ChatService)
 local Players = game:GetService("Players")
-local RESPONSE_API = require(script.Response)
+local RESPONSE_API = require(ResponseEnvironment.ResponseAPI.Response)
 
 local OUTPUT_POINTERS = {
 	Output = Color3.new(1,1,1),
