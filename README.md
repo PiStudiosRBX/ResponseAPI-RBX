@@ -8,10 +8,10 @@ RBX version of Response API. This module in its current state is VERY barebones
 To start using the Response APIs, require the ResponseAPI module script located in ``/ResponseAPI/Response/``
 You can then use the various API functions provided by it's API and ModuleScripts in the ``/ResponseAPI/Response/APIs`` folder
 API List:
-* Response (Base API)
-* CommandManager
-* PluginManager
-* util
+* [Response (Base API)](https://github.com/FilteredDev/ResponseAPI-RBX#response)
+* [CommandManager](https://github.com/FilteredDev/ResponseAPI-RBX#commandmanager)
+* [PluginManager](https://github.com/FilteredDev/ResponseAPI-RBX#pluginmanager)
+* [util](https://github.com/FilteredDev/ResponseAPI-RBX#util)
 
 Adding your own APIs can be read further down.
 
@@ -46,7 +46,7 @@ Because this is a callback, please only declare this once for intended behaviour
 |---|
 |Begins handling a command using the raw command text, this runs it through the command parser, attaches the extra data, then runs the command.|
 
-# Command Manager
+# CommandManager
 
 ### Properties
 |``dictionary`` Commands|
