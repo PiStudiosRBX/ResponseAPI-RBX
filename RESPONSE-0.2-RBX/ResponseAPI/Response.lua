@@ -12,10 +12,15 @@ for _, v in pairs(script.Parent.APIs:GetChildren()) do
 end
 
 --Response Object
-function Response:InvokeErrorCallback(text, outType, metadata)
+function Response:InvokeCallback(text, outType, metadata)
     if self.OutputCallback then
         self.OutputCallback(text, outType, metadata)
     end
+end
+
+function Response:InvokeErrorCallback(...)
+	warn("This function is deprecated, please use InvokeCallback")
+	self:InvokeCallback(...)
 end
 
 function Response:ProcessCommand(text, commandDataAppend)
